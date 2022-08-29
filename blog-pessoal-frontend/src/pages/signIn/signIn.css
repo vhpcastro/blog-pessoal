@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #AB7EEB;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    background-color: whitesmoke;
+
+    width: 95vw;
+    height: 90vh;
+
+    border-radius: 20px;
+}

@@ -1,11 +1,13 @@
 import React from 'react';
-import Home from './pages/home/home'
+import Navbar from './components/statics/navbar/navbar';
+import SignIn from './pages/signIn/signIn';
 import './App.css';
 
 
 function App() {
   return (
-    <Home />
+    <SignIn />
+    
   );
 }
 
