@@ -3,8 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/statics/navbar/navbar';
-import SignUp from './pages/signUp/signUp';
+import SignUp from './pages/SignUp/SignUp';
 import './App.css';
+import SignIn from './pages/SignIn/SignIn';
 
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
 
       <Routes>
 
-        <Route path='/' element={ <SignUp /> }></Route>
+        <Route path='/' element={ <SignIn /> }></Route>
 
-        <Route path='/login' element={ <SignUp /> }></Route>
+        <Route path='/login' element={ <SignIn /> }></Route>
+
+        <Route path='/register' element={ <SignUp /> }></Route>
 
       </Routes>
 
