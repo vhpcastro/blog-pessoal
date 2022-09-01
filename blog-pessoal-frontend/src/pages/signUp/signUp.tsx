@@ -1,67 +1,99 @@
 import React from 'react';
 
-import { Grid, Box, TextField, Typography, Button, } from '@material-ui/core';
+import { Grid, TextField, Typography, Button, } from '@material-ui/core';
+import { Box } from '@mui/material';
 
 import { Link } from 'react-router-dom';
 
-import './signUp.css'
+import './SignUp.css';
 
 function SignUp() {
 
     return (
         <>
             <Grid container>
-                
-                    <Box className="container">
 
-                        <Box className="box">
+                <Box className="container">
 
-                            <Box className="signin">
+                    <Box className="box">
 
-                                <Box className="signin-container">
+                        <Box className="box-image">
 
-                                    <Typography className="title" variant="h3"> Welcome</Typography>
+                            <img className="img" src="https://cdn.discordapp.com/attachments/710276943592816720/1014999749453172838/video-conferencing-concept-landing-page_52683-20174.png" alt="register-image" />
 
-                                    <Box className="input-container">
+                        </Box>
+
+                        <Box className="signup">
+
+                            <Box className="signup-container">
+
+                                <Box className="title-box">
+                                    <Typography className="title" variant="h3"> Join Us</Typography>
+                                </Box>
+
+                                <Box className="input-container">
+
+                                    <Box className="input-box">
                                         <TextField
                                             className="input"
-                                            label="Username"
+                                            id="name"
+                                            name="name"
+                                            label="Name"
                                             variant="filled"
                                         />
+                                    </Box>
 
+                                    <Box className="input-box">
                                         <TextField
                                             className="input"
-                                            id="filled-password-input"
+                                            id="username"
+                                            name="username"
+                                            label="Username"
+                                            type="email"
+                                            variant="filled"
+                                        />
+                                    </Box>
+
+                                    <Box className="input-box">
+                                        <TextField
+                                            className="input"
+                                            id="password"
+                                            name="password"
                                             label="Password"
                                             type="password"
-                                            autoComplete="current-password"
                                             variant="filled"
                                         />
                                     </Box>
 
-                                    <Box className="links-container">
-                                        <Link to='' className="links">I forgot my password</Link>
-                                        <Link to='/register' className="links">I don't have an account</Link>
+                                    <Box className="input-box" id="confirmpass-box">
+                                        <TextField
+                                            className="input"
+                                            id="confirmPassword"
+                                            name="confirmPassword"
+                                            label="Confirm Password"
+                                            type="password"
+                                            variant="filled"
+                                        />
                                     </Box>
-
-                                    <Link className="btn" to='/home'>
-                                        <Button className="button">LOGIN</Button>
-                                    </Link>
 
                                 </Box>
 
-                            </Box>
+                                <Box className="links-container">
+                                    <Link to='/login' className="links">I already have an account</Link>
+                                </Box>
 
-                            <Box className="box-image">
-
-                                <img className="img" src="https://cdn.discordapp.com/attachments/710276943592816720/1014292458202484756/signup-img.png" alt="login-image" />
+                                <Link className="btn" to='/login'>
+                                    <Button type="submit" className="button">REGISTER</Button>
+                                </Link>
 
                             </Box>
 
                         </Box>
 
                     </Box>
-                
+
+                </Box>
+
             </Grid>
         </>
     )
