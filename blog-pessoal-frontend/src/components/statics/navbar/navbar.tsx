@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Box, AppBar, Toolbar, Typography, Button } from '@material-ui/core';
-
+import { Grid, AppBar, Toolbar, Typography, Button } from '@material-ui/core';
+import { Box } from '@mui/material';
 import './navbar.css'
 
 function navbar() {
