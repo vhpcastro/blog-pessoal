@@ -26,7 +26,7 @@ import com.blogpessoal.repository.TemaRepository;
 
 @RestController
 @RequestMapping("/postagens")
-@CrossOrigin(origins = "", allowedHeaders = "")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostagemController {
 
 	@Autowired
